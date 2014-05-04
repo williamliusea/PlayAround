@@ -11,6 +11,25 @@ namespace Question1
         static int nCase;
         static int total;
 
+        class Node
+        {
+            public int person;
+            public int min;
+            public int max;
+            public List<Node> nexts;
+            public HashSet<int> nextPersons;
+
+            public Node()
+            {
+                this.nexts = new List<Node>();
+                this.nextPersons = new HashSet<int>();
+            }
+
+            public override string ToString()
+            {
+                return string.Format("{0} {1} {2}", person, min, max);
+            }
+        }
         static void Solve(TextReader input, TextWriter output)
         {
             nCase = int.Parse(input.ReadLine());
@@ -41,78 +60,48 @@ namespace Question1
                     total += l.Count;
                 }
 
-                Solution2(new int[n], 0);
-                output.WriteLine(possible.Count);
+                //Solution2(new int[n], 0);
+                solution3();
+                //output.WriteLine(possible.Count);
             }
 
         }
-
-        static int Solution1()
+        static void solution3()
         {
             var t = new List<Tuple<int, int>>(total);
-            var s = new int[n];
-            var h = new HashSet<int>();
+            var s = new List<Tuple<int, int>>();
+            var h = new List<int>();
+            var p2n = new List<List<Node>>();
             for (var i = 0; i < n; i++)
             {
+                var input = inputs[i];
+                input.Sort();
+                s.Add(new Tuple<int, int>(input[0], input[input.Count - 1]));
                 t.AddRange(inputs[i].Select(x => new Tuple<int, int>(i, x)));
-                s[i] = inputs[i].Count;
             }
 
-            t = t.OrderBy(x => x.Item2).ToList();
-
-            int j = 0;
-            do
+            for (var j = 0; j < t.Count; j++)
             {
-                h.Add(t[j].Item1);
-                s[t[j].Item1]--;
-                j++;
-            } while (h.Count < k);
-            j--;
-
-            int j2 = j;
-            while (h.Count < n)
-            {
-                if (s[t[j2].Item1] > 0)
+                int bc = 0;
+                int ac = 0;
+                for (var i = 0; i < n; i++)
                 {
-                    h.Add(t[j2].Item1);
-                    s[t[j2].Item1]--;
+                    if (t[j].Item1 == i)
+                        continue;
+                    if (s[i].Item1 < t[j].Item2)
+                        bc++;
+                    if (s[i].Item2 > t[j].Item2)
+                        ac++;
                 }
-                j2++;
-            }
-
-            var h1 = new HashSet<int>();
-            int j1 = t.Count;
-            while (h1.Count < (n - k))
-            {
-                j1--;
-                if (s[t[j1].Item1] > 0)
+                if (bc >= k - 1 && ac >= n - k)
                 {
-                    h1.Add(t[j1].Item1);
-                    s[t[j1].Item1]--;
+                    h.Add(t[j].Item2);
                 }
             }
 
-            return j1 - j;
+            Console.Write(h.Count);
+            Console.WriteLine();
         }
-
-        static HashSet<int> possible = new HashSet<int>();
-        static void Solution2(int[] choices, int person)
-        {
-            if (person >= n)
-            {
-                int[] temp = (int[])choices.Clone();
-                temp = temp.OrderBy(x => x).ToArray();
-                possible.Add(temp[k - 1]);
-                return;
-            }
-
-            for (int i = 0; i < inputs[person].Count; i++)
-            {
-                choices[person] = inputs[person][i];
-                Solution2(choices, person + 1);
-            }
-        }
-
         static void Main(string[] args)
         {
             using (StreamReader sr = new StreamReader("input.txt"))
