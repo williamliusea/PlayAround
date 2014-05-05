@@ -30,6 +30,22 @@ namespace Question1
                 return string.Format("{0} {1} {2}", person, min, max);
             }
         }
+
+        /*
+         * Q1 Custom Sort
+
+
+You have a set of numbers. a1, a2, a3, a4.....an. numbers are random and may repeat. 
+Arrange the number in order such that x1 > x2 < x3 > x4 < x5 > x6.......
+
+x1 has no relation ship with x3, x4, x5... x2 has no relation ship with x4, x5... x3 has no relation ship with x1, x5, x6... and so on.
+
+There maybe many feasible solution to this problem see that the final answer reaches any one of them. If the input is like 22,22,22 then it should output a message as no feasible solution but for an input like this 7 7 7 3 3 it should print out a solution like : 7 3 7 3 7.
+*/
+        static void SolveCustomSort()
+        {
+
+        }
         static void Solve(TextReader input, TextWriter output)
         {
             nCase = int.Parse(input.ReadLine());
