@@ -8,7 +8,7 @@ namespace ArrayAndStrings
             Question1.Test();
             EvaluateReversePolishNotation.Test();
             MedianTwoSortedArrays.Test();
-            WordLadder.Test();
+            StringSum.Test();
         }
     }
 }

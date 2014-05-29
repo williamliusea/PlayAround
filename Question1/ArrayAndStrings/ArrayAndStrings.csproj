@@ -51,7 +51,7 @@
     <Compile Include="Question3.cs" />
     <Compile Include="Question5.cs" />
     <Compile Include="Question6.cs" />
-    <Compile Include="WordLadder.cs" />
+    <Compile Include="StringSum.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
