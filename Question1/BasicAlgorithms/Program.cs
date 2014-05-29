@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace BasicAlgorithms
 {
@@ -11,6 +7,7 @@ namespace BasicAlgorithms
         static void Main(string[] args)
         {
             Heap.Test();
+            StringSearch.Test();
             Console.ReadKey();
         }
     }

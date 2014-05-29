@@ -76,8 +76,6 @@ namespace ArrayAndStrings
             string t = "23452ased";
             Assert.IsTrue(Solution1(s));
             Assert.IsFalse(Solution1(t));
-            Assert.IsTrue(Solution2(s));
-            Assert.IsFalse(Solution2(t));
         }
     }
 }

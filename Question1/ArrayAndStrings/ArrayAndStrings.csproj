@@ -42,6 +42,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="EvaluateReversePolishNotation.cs" />
+    <Compile Include="MedianTwoSortedArrays.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Question1.cs" />
@@ -49,6 +51,7 @@
     <Compile Include="Question3.cs" />
     <Compile Include="Question5.cs" />
     <Compile Include="Question6.cs" />
+    <Compile Include="WordLadder.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
