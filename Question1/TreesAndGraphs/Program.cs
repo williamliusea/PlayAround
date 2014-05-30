@@ -12,6 +12,7 @@ namespace TreesAndGraphs
         {
             Question1.Test();
             Question7.Test();
+            SumEqualValueBalancedBST.Test();
         }
     }
 }
