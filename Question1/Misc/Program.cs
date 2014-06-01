@@ -4,16 +4,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace TreesAndGraphs
+namespace Misc
 {
     class Program
     {
         static void Main(string[] args)
         {
-            Question1.Test();
-            Question7.Test();
-            SumEqualValueBalancedBST.Test();
-            BasicAlgo.Test();
+            PuzzleParlor.Test();
+            ReverseAdjacentNode.Test();
         }
     }
 }

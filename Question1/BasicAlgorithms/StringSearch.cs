@@ -61,8 +61,8 @@ namespace BasicAlgorithms
                 }
                 else if(current>0)
                 {
-                    current = lookup[current];
                     p += current - lookup[current];
+                    current = lookup[current];
                 }
                 else
                 {

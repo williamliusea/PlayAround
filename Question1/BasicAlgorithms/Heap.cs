@@ -14,6 +14,10 @@ namespace BasicAlgorithms
     {
         public List<int> data = new List<int>();
 
+        /// <summary>
+        /// O(log(n))
+        /// </summary>
+        /// <param name="item"></param>
         public void Insert(int item)
         {
             data.Add(item);
@@ -31,6 +35,10 @@ namespace BasicAlgorithms
             }
         }
 
+        /// <summary>
+        /// O(log(n))
+        /// </summary>
+        /// <returns></returns>
         public int Pop()
         {
             int result = data[0];

@@ -17,11 +17,7 @@ namespace TreesAndGraphs
         public static int maxdepth = 0;
         public static int mindepth = int.MaxValue;
 
-        public class TreeNode
-        {
-            public TreeNode left;
-            public TreeNode right;
-        }
+
 
         public static void Solution1(TreeNode root, int depth)
         {

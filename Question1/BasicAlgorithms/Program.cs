@@ -8,6 +8,7 @@ namespace BasicAlgorithms
         {
             Heap.Test();
             StringSearch.Test();
+            MergeSort.Test();
             Console.ReadKey();
         }
     }

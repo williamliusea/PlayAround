@@ -9,6 +9,9 @@ namespace ArrayAndStrings
             EvaluateReversePolishNotation.Test();
             MedianTwoSortedArrays.Test();
             StringSum.Test();
+            LongestSubstringWithoutRepeatingChar.Test();
+            CustomSort.Test();
+            MergeIntervals.Test();
         }
     }
 }

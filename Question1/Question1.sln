@@ -19,6 +19,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TreesAndGraphs", "TreesAndG
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BasicAlgorithms", "BasicAlgorithms\BasicAlgorithms.csproj", "{7B9BD41B-F181-421E-9666-AA23D0F38DDD}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DynamicProgramming", "DynamicProgramming\DynamicProgramming.csproj", "{368E3194-164B-46AB-A41D-27E2649EC5E3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Misc", "Misc\Misc.csproj", "{BED108DA-AD0A-415D-AD40-6812DD68A15C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -57,6 +61,14 @@ Global
 		{7B9BD41B-F181-421E-9666-AA23D0F38DDD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7B9BD41B-F181-421E-9666-AA23D0F38DDD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7B9BD41B-F181-421E-9666-AA23D0F38DDD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{368E3194-164B-46AB-A41D-27E2649EC5E3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{368E3194-164B-46AB-A41D-27E2649EC5E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{368E3194-164B-46AB-A41D-27E2649EC5E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{368E3194-164B-46AB-A41D-27E2649EC5E3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BED108DA-AD0A-415D-AD40-6812DD68A15C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BED108DA-AD0A-415D-AD40-6812DD68A15C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BED108DA-AD0A-415D-AD40-6812DD68A15C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BED108DA-AD0A-415D-AD40-6812DD68A15C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
