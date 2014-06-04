@@ -55,6 +55,7 @@
     <Compile Include="Question3.cs" />
     <Compile Include="Question5.cs" />
     <Compile Include="Question6.cs" />
+    <Compile Include="RegexMatch.cs" />
     <Compile Include="StringSum.cs" />
     <Compile Include="TwoSum.cs" />
     <Compile Include="WordLadder.cs" />
