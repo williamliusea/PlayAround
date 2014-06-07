@@ -12,6 +12,7 @@ namespace ArrayAndStrings
             LongestSubstringWithoutRepeatingChar.Test();
             CustomSort.Test();
             MergeIntervals.Test();
+            RegexMatch.Test();
         }
     }
 }
