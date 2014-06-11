@@ -19,7 +19,7 @@ namespace TreesAndGraphs
 
 
 
-        public static void Solution1(TreeNode root, int depth)
+        public static void Solution1(TreeNode<int> root, int depth)
         {
             if (root == null)
             {
@@ -34,15 +34,15 @@ namespace TreesAndGraphs
 
         public static void Test()
         {
-            var root = new TreeNode();
-            root.left = new TreeNode();
-            root.right = new TreeNode();
+            var root = new TreeNode<int>();
+            root.left = new TreeNode<int>();
+            root.right = new TreeNode<int>();
             Solution1(root, 0);
             Assert.IsTrue(maxdepth - mindepth <= 1);
             maxdepth = 0; mindepth = int.MaxValue;
             var r = root.left;
-            r.left = new TreeNode();
-            r.left.left = new TreeNode();
+            r.left = new TreeNode<int>();
+            r.left.left = new TreeNode<int>();
             Solution1(root, 0);
             Assert.IsFalse(maxdepth - mindepth <= 1);
 

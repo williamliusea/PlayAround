@@ -14,6 +14,8 @@ namespace TreesAndGraphs
             Question7.Test();
             SumEqualValueBalancedBST.Test();
             BasicAlgo.Test();
+            Dijkstra.Test();
+            ToTree.Test();
         }
     }
 }

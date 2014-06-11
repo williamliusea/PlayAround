@@ -12,6 +12,7 @@ namespace Misc
         {
             PuzzleParlor.Test();
             ReverseAdjacentNode.Test();
+            SolveForX.Test();
         }
     }
 }

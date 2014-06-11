@@ -58,13 +58,13 @@ namespace TreesAndGraphs
             }
         }
 
-        public static bool IsBalanceTree(TreeNode root)
+        public static bool IsBalanceTree(TreeNode<int> root)
         {
             int depth = 0;
             return IsBalanceTree(root, ref depth);
         }
 
-        private static bool IsBalanceTree(TreeNode root, ref int depth)
+        private static bool IsBalanceTree(TreeNode<int> root, ref int depth)
         {
             depth = 1;
             if (root.left == null && root.right == null) return true;
@@ -87,11 +87,11 @@ namespace TreesAndGraphs
 
         public static void Test()
         {
-            var root = new TreeNode();
-            root.left = new TreeNode();
-            root.left.left = new TreeNode();
+            var root = new TreeNode<int>();
+            root.left = new TreeNode<int>();
+            root.left.left = new TreeNode<int>();
             Assert.IsFalse(IsBalanceTree(root));
-            root.right = new TreeNode();
+            root.right = new TreeNode<int>();
             Assert.IsTrue(IsBalanceTree(root));
         }
     }

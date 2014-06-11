@@ -42,13 +42,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AdjacencyMatrix.cs" />
     <Compile Include="BasicAlgo.cs" />
+    <Compile Include="Dijkstra.cs" />
+    <Compile Include="FlattenTree.cs" />
     <Compile Include="GraphNode.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Question1.cs" />
     <Compile Include="Question7.cs" />
     <Compile Include="SumEqualValueBalancedBST.cs" />
+    <Compile Include="ToTree.cs" />
     <Compile Include="TreeNode.cs" />
   </ItemGroup>
   <ItemGroup>
